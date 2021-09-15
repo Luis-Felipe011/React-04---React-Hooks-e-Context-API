@@ -20,10 +20,10 @@ export const AppContexto = React.createContext(contextoInicial)
 
         return(
             <AppContexto.Provider value={{
-                contextoNome: contexto.contextoNome,
-                contextoSenha: contexto.contextoSenha,
-                setContextNome: novoNome => atualizaContexto('contextoNome', novoNome),
-                setContextoSenha: novaSenha => atualizaContexto('contextoSenha, novaSenha')           
+     contextoNome: contexto.contextoNome,
+ contextoSenha: contexto.contextoSenha,
+    setContextoNome: novoNome => atualizaContexto('contextoNome', novoNome),
+    setContextoSenha: novaSenha => atualizaContexto('contextoSenha, novaSenha')           
             }}>
                  {props.children}
             </AppContexto.Provider>
